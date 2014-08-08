@@ -81,7 +81,7 @@ margin: auto;
 
 
 /*按钮*/
-button.success,button.danger,button.info,button.warning{
+button.success,button.danger,button.info,button.warning,a.btn{
 	border: none;
 	padding: 7px 20px;
 	-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;
@@ -90,31 +90,41 @@ button.success,button.danger,button.info,button.warning{
 	color: #fff;
 	font-family: "Segoe UI",'Microsoft Yahei';
 }
-button.success{
-background-color: #339933;
-
+a.btn{
+	background-color: #1A60CA;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
 }
-button.danger{
+a.btn:hover{
+background-color: #0051cc;
+}
+button.success,a.success{
+background-color: #339933;
+}
+button.danger,a.danger{
  background-color: #e51400;
 }
-button.info{
+button.info,a.info{
  background-color: #4ab0ce;
 }
-button.warning{
+button.warning,a.warning{
 background-color: #f09609;
 }
-button.success:hover{
+button.success:hover,a.success:hover{
 background-color: #206020;
 }
-button.danger:hover{
+button.danger:hover,a.danger:hover{
 background-color: #990d00;
 }
-button.info:hover{
+button.info:hover,a.info:hover{
 background-color: #4498b6;
 }
-button.warning:hover{
+button.warning:hover,a.warning:hover{
 	background-color: #a66806;
 }
+
+
 
 /*输入框*/
 input[type='text'],input[type='password'],input[type='num'],input[type='email'],input[type='url']{
@@ -122,27 +132,59 @@ input[type='text'],input[type='password'],input[type='num'],input[type='email'],
   width: 100%;height:1.6rem;padding:0.2rem 0;border: 1px solid #70a2e2;
   margin: 0;text-indent: 0.8rem;
 }
-textarea.textarea{
-	width: 99%;
-	text-indent:10px;
-	height: 60px;
+/*缓动*/
+input,textarea{
 	transition:All 0.4s ease-in-out;
 	-webkit-transition:All 0.4s ease-in-out;
 	-moz-transition:All 0.4s ease-in-out;
 	-o-transition:All 0.4s ease-in-out;
 }
-textarea:focus,input[type='text']:focus,input[type='password']:focus,input[type='num']:focus,input[type='email']:focus
+textarea.textarea,textarea{
+	width: 100%;
+	text-indent:10px;
+	height: 60px;
+	padding: 10px 0;
+}
+
+textarea.success,input[type='text'].success,input[type='password'].success,input[type='num'].success,input[type='email'].success,input[type='url'].success
+{
+  border-color: #339933;
+}
+textarea.danger,input[type='text'].danger,input[type='password'].danger,input[type='num'].danger,input[type='email'].danger,input[type='url'].danger
+{
+  border-color: #e51400;
+}
+textarea.info,input[type='text'].info,input[type='password'].info,input[type='num'].info,input[type='email'].info,input[type='url'].info
+{
+  border-color: #208dbe;
+}
+textarea.warning,input[type='text'].warning,input[type='password'].warning,input[type='num'].warning,input[type='email'].warning,input[type='url'].warning
+{
+  border-color: #e6bb0d;
+}
+
+textarea:focus,input[type='text']:focus,input[type='password']:focus,input[type='num']:focus,input[type='email']:focus,input[type='url']:focus
 {
 -webkit-box-shadow: 0 0 2px rgba(52, 186, 255, .46);
 -moz-box-shadow: 0 0 2px rgba(52, 186, 255, .46);
 box-shadow: 0 0 2px rgba(52, 186, 255, .46);
 
-
-}
-textarea:focus{
-	height: 160px;
 }
 
+/*字体颜色填充*/
+
+p.success,span.success,i.success,b.success,h1.success,h2.success,h3.success{
+  color: #339933;
+}
+p.danger,span.danger,i.danger,b.danger,h1.danger,h2.danger,h3.danger{
+  color: #e51400;
+}
+p.info,span.info,i.info,b.info,h1.info,h2.info,h3.info{
+  color:#4ab0ce;
+}
+p.warning,span.warning,i.warning,b.warning,h1.warning,h2.warning,h3.warning{
+  color: #f09609;
+}
 
 /*圆角*/
 
@@ -165,9 +207,13 @@ textarea:focus{
 		float: initial;
 		width: 100%;
 	}
-	button.success,button.danger,button.info,button.warning{
+	button.success,button.danger,button.info,button.warning,a.btn{
 		width: 90%;
 		margin: 0 5%;
+	}
+	a.btn{
+		text-align: center;
+		padding: 7px 0;
 	}
 	aside.aside-right {
 	padding: 0px;

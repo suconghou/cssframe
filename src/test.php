@@ -164,6 +164,31 @@
                         </p>
                     </div>
                 </div>
+                <div class="full">
+                    <div class="half">
+                        <p>
+                            <a href="" class="btn success">登陆</a>
+                            <a href="" class="btn info">注册</a>
+                            <a href="" class="btn warning">注销</a>
+                            <a href="" class="btn danger">删除</a>
+                            
+                        </p>
+                    </div>
+                    <div class="half">
+                        <p>
+                            <a href="" class="btn">链接按钮</a>
+                        </p>
+                        <p>
+                            <a href="" class="btn success">链接按钮</a>
+                        </p>
+                        <p>
+                            <a href="" class="btn info">链接按钮</a>
+                        </p>
+                        <p>
+                            <a href="" class="btn danger">链接按钮</a>
+                        </p>
+                    </div>
+                </div>
 
             </section>
             <section>
@@ -176,6 +201,9 @@
                 </div>
                 <div class="full">
                     <div class="fourth">
+                        <p>
+                            <input type="text">
+                        </p>
                         <p>
                             <input type="text" class="success">
                         </p>
@@ -213,6 +241,45 @@
                         </p>
                     </div>
                 </div>
+                <div class="full">
+                    <div class="half">
+                        <p>
+                           <textarea name="" id="" ></textarea>
+                        </p>
+                    </div>
+                     <div class="half">
+                        <p>
+                           <textarea name="" id="" ></textarea>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="full">
+                    <div class="fourth">
+                        <p>
+                           <textarea class="success" ></textarea>
+                        </p>
+                    </div>
+                     <div class="fourth">
+                        <p>
+                           <textarea class='info'></textarea>
+                        </p>
+                    </div>
+
+                     <div class="fourth">
+                        <p>
+                           <textarea class="warning" ></textarea>
+                        </p>
+                    </div>
+
+                     <div class="fourth">
+                        <p>
+                           <textarea class="danger" ></textarea>
+                        </p>
+                    </div>
+
+                </div>
+
             </section>
 
             <section>
@@ -239,6 +306,29 @@
                         <p>
                             <button class="danger round">加入黑名单</button>
                         </p>
+                        <p>
+                            <a href="" class="btn radius">链接圆角</a>
+                        </p>
+
+                        <p>
+                            <a href="" class="btn round">链接圆角</a>
+                        </p>
+
+                        <p>
+                            <a href="" class="btn radius success">链接圆角</a>
+                        </p>
+
+                        <p>
+                            <a href="" class="btn radius info">链接圆角</a>
+                        </p>
+
+                        <p>
+                            <a href="" class="btn round danger">链接圆角</a>
+                        </p>
+
+                        <p>
+                            <a href="" class="btn round warning">链接圆角</a>
+                        </p>
                     </div>
                 </div>
                 <div class="full">
@@ -255,6 +345,14 @@
                         <p>
                             <input type="text" class="danger round">
                         </p>
+
+                        <p>
+                            <textarea class="success radius" ></textarea>
+                        </p>
+
+                        <p>
+                            <textarea class="danger round" ></textarea>
+                        </p>
                     </div>
                 </div>
                 <div class="full">
@@ -264,6 +362,13 @@
                 </div>
             </section>
             
+            <section>
+                <h1>颜色填充</h1>
+                <p>四类,可用于p,i,b,span,h1,h2,h3</p>
+                <div class="full">
+                    <p class="success">success</p>
+                </div>
+            </section>
             <div style="height:220px;">
               
             </div>
