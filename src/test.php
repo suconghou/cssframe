@@ -55,6 +55,14 @@
                 <li><a href="">按钮</a></li>
                 <li><a href="">输入框</a></li>
                 <li><a href="">圆角</a></li>
+                <li><a href="">颜色填充</a></li>
+                <li><a href="">徽标</a></li>
+                <li><a href="">分页</a></li>
+                <li><a href="">进度条</a></li>
+                <li><a href="">面包屑</a></li>
+                <li><a href="">导航栏</a></li>
+                <li><a href="">面板</a></li>
+                <li><a href="">表格</a></li>
             </ul>
         </nav>
     </header>
@@ -121,13 +129,24 @@
                     </div>
                 </div>
                 <div class="full">
-                    <div class="half" style="background:#fe6673;padding:20px 0;">
-                        二分之一
+                    <div class="fourth" style="background:#fe6673;padding:20px 0;">
+                        四分之一
                     </div>
-                    <div class="half" style="background:#fea099;padding:20px 0;">
-                        二分之一
+                    <div class="three-fourths" style="background:#fea099;">
+                        <div class="third" style="background:#f95;padding:20px 0;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">
+                            四分之三里的三分之一
+                        </div>
+                        <div class="two-thirds">
+                            <div class="third" style="background:#f5e;padding:20px 0;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">
+                              四分之三里的三分之二里的三分之一
+                            </div>
+                            <div class="half" style="background:#e2d;padding:20px 0;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">
+                              四分之三里的三分之二里的二分之一
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </section>
             <section>
                 <h1>按钮</h1>
@@ -244,7 +263,7 @@
                 <div class="full">
                     <div class="half">
                         <p>
-                           <textarea name="" id="" ></textarea>
+                           <textarea class="danger" ></textarea>
                         </p>
                     </div>
                      <div class="half">
@@ -364,9 +383,229 @@
             
             <section>
                 <h1>颜色填充</h1>
-                <p>四类,可用于p,i,b,span,h1,h2,h3</p>
+                <p>四类,可用于p,i,b,h1,h2,h3</p>
+                <p>用于div 可填充背景色</p>
                 <div class="full">
-                    <p class="success">success</p>
+                    <p class="success">success填充的P标签</p>
+                    <i class="danger">danger填充的I标签</i>
+                    <h3 class="info">info 填充的H3标签</h3>
+                    <p class="danger">
+                        B标签嵌套在P中
+                        <b class="warning">warning填充的b标签</b>
+                    </p>
+
+                    <p>
+                        给带有success/info/warning/danger的div添加alert即可转化为提示框
+                    </p>
+   
+                </div>
+                <div class="full">
+                    <div class="half">
+                        <div class="success">success内容部分</div>
+                    </div>
+                    <div class="half">
+                        <div class="info">info内容部分</div>
+                    </div>
+                </div>
+
+                <div class="full">
+                    <div class="half">
+                        <div class="warning">warning内容部分</div>
+                    </div>
+                    <div class="half">
+                        <div class="danger">danger内容部分</div>
+                    </div>
+                </div><br>
+                <div class="full">
+                    <div class="fourth">
+                        <div class="success alert">
+                            <p class="danger">success alert</p>
+                        </div>
+                    </div>
+                    <div class="fourth">
+                        <div class="info alert">
+                            <p> info alert </p>
+                        </div>
+                    </div>
+                    <div class="fourth">
+                        <div class="warning alert">
+                        <p> warning alert </p>
+                        </div>
+                    </div>
+                    <div class="fourth">
+                        <div class="danger alert">
+                        <p> danger alert </p>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="full">
+                    <div class="half">
+                        <div class="success alert radius">
+                            <p>带有radius的success alert</p>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="full">
+                    <div class="half">
+                        <div class="info alert radius">
+                            <p>带有radius的info alert</p>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="full">
+                    <div class="half">
+                        <div class="warning alert round">
+                            <p>带有round的warning alert</p>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="full">
+                    <div class="half">
+                        <div class="danger alert round">
+                            <p>带有round的danger alert</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h1>徽标</h1>
+                <p>同样四类</p>
+                <p>success,info,danger,warning</p>
+                <p>只适用于span标签</p>
+                <p>可以添加圆角</p>
+                <div class="full">
+                    <div class="half">
+                        <p>
+                            <span class='success'>其中25已完成</span>
+                        </p>
+                        <p>
+                            <span class='info'>进度69%</span>
+                        </p>
+                        <p>
+                            <span class='warning'>版主</span>
+                        </p>
+                        <p>
+                            <span class='danger'>管理员</span>
+                        </p>
+                    </div>
+                    <div class="half">
+                        
+                        <p>
+                            <span class='success radius'>155个赞</span>
+                        </p>
+                        <p>
+                            <span class='info radius'>顶66</span>
+                        </p>
+                        <p>
+                            <span class='warning round'>18/143</span>
+                        </p>
+                        <p>
+                            <span class='danger round'>19</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h1>分页</h1>
+                <p>ul.pager>li>a 适用样式</p>
+                <p>ul.pager.success 等不同颜色</p>
+                <p>ul.pager.radius 圆角</p>
+                <p>ul.pager.round 圆角</p>
+                <p>ul.pager.circle 圆角</p>
+            
+                <div class="full">
+                    <div>
+                        <ul class="pager success">
+                            <li><a href="">首页</a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">21</a></li>
+                            <li><a href="">尾页</a></li>
+                        </ul>
+                    </div><br>
+                    <div>
+                        <ul class="pager info">
+                            <li><a href="">首页</a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">21</a></li>
+                            <li><a href="">尾页</a></li>
+                        </ul>
+                    </div><br>
+                    <div>
+                        <ul class="pager warning">
+                            <li><a href="">首页</a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">21</a></li>
+                            <li><a href="">尾页</a></li>
+                        </ul>
+                    </div><br>
+                    <div>
+                        <ul class="pager danger">
+                            <li><a href="">首页</a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">21</a></li>
+                            <li><a href="">尾页</a></li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div>
+                        <ul class="pager warning radius">
+                            <li><a href="">首页</a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">21</a></li>
+                            <li><a href="">尾页</a></li>
+                        </ul>
+                    </div>
+                     <br>
+                    <div>
+                        <ul class="pager info round">
+                            <li><a href="">首页</a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">21</a></li>
+                            <li><a href="">尾页</a></li>
+                        </ul>
+                    </div>
+                     <br>
+                    <div>
+                        <ul class="pager danger circle">
+                            <li><a href="">首页</a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">21</a></li>
+                            <li><a href="">尾页</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section>
+                <h1>进度条</h1>
+                <p>P+I的形式</p>
+                <p>I可接受success/info/warning/danger样式</p>
+                <p>定义I的百分比已达到填充</p>
+                <p>为progress添加active使其动起来</p>
+                <div class="full">
+                    <p class="progress"><i style='width:26%'></i></p>
+                    <p class="progress active"><i style='width:20%' class='info'></i></p>
+                    <p class="progress active"><i style='width:30%' class='warning'></i></p>
+                    <p class="progress active"><i style='width:60%' class='danger'></i></p>
+                    <p class="progress active"><i class='success'></i></p>
                 </div>
             </section>
             <div style="height:220px;">
