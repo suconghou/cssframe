@@ -22,10 +22,11 @@ ul {margin: 0;padding-left: 0; text-align: left; list-style: none;}
 	max-width: 1000px;
 	width: 80%;
 	height: auto;
-	margin: 0 auto;
-	
+	margin: 0 auto;	
 }
-
+p{
+	*margin: 12px 0;
+}
 /*滚动条*/
 
 ::-webkit-scrollbar { width:10px; margin-right:2px; }
@@ -88,7 +89,8 @@ button.success,button.danger,button.info,button.warning,a.btn{
 	white-space: nowrap;
 	font-size: 16px;
 	color: #fff;
-	font-family: "Segoe UI",'Microsoft Yahei';
+	font-family: 'Microsoft Yahei';
+
 }
 a.btn{
 	background-color: #3271D1;
@@ -129,8 +131,12 @@ button.warning:hover,a.warning:hover{
 /*输入框*/
 input[type='text'],input[type='password'],input[type='num'],input[type='email'],input[type='url']{
 -webkit-tap-highlight-color: rgba(0, 0, 0, 0);-webkit-tap-highlight-color: transparent;
-  width: 100%;height:1.6rem;padding:0.2rem 0;border: 1px solid #70a2e2;
+  width: 100%;
+  height: 22px;padding:4px  0;text-indent: 10px; *display: block;
+  height:1.6rem;padding:0.2rem 0;
+  border: 1px solid #70a2e2;
   margin: 0;text-indent: 0.8rem;
+  font-size: 16px;
 }
 /*缓动*/
 input,textarea{
@@ -144,6 +150,8 @@ textarea{
 	text-indent:10px;
 	height: 60px;
 	padding: 10px 0;
+	display:block; /*fix IE7 偏移*/
+	  font-size: 16px;
 }
 
 textarea.success,input[type='text'].success,input[type='password'].success,input[type='num'].success,input[type='email'].success,input[type='url'].success
@@ -374,6 +382,7 @@ p.progress.active>i{
 	}
 	.full .half,.full .third,.full .two-thirds,.full .fourth,.full .three-fourths{
 		display: block;
+		*display:block;
 		float: initial;
 		width: 100%;
 	}
