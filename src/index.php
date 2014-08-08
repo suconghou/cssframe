@@ -29,7 +29,9 @@
         *display: inline;
         *zoom: 1;
     }
-
+    header>nav>ul>li>a:hover{
+        color: #696;
+    }
     #wrapper{
         position: absolute;
         left: 200px;
@@ -50,28 +52,28 @@
     <header>
         <nav>
             <ul>
-                <li><a href="">开始使用</a></li>
-                <li><a href="">布局</a></li>
-                <li><a href="">按钮</a></li>
-                <li><a href="">输入框</a></li>
-                <li><a href="">圆角</a></li>
-                <li><a href="">颜色填充</a></li>
-                <li><a href="">徽标</a></li>
-                <li><a href="">分页</a></li>
-                <li><a href="">进度条</a></li>
-                <li><a href="">面包屑</a></li>
-                <li><a href="">导航栏</a></li>
-                <li><a href="">面板</a></li>
-                <li><a href="">表格</a></li>
-                <li><a href="">引用</a></li>
-                <li><a href="">代码</a></li>
+                <li><a href="javascript:go('#start')">开始使用</a></li>
+                <li><a href="javascript:go('#column')">布局</a></li>
+                <li><a href="javascript:go('#button')">按钮</a></li>
+                <li><a href="javascript:go('#input')">输入框</a></li>
+                <li><a href="javascript:go('#radius')">圆角</a></li>
+                <li><a href="javascript:go('#color')">颜色填充</a></li>
+                <li><a href="javascript:go('#span')">徽标</a></li>
+                <li><a href="javascript:go('#pager')">分页</a></li>
+                <li><a href="javascript:go('#progress')">进度条</a></li>
+                <li><a href="javascript:go('#location')">面包屑</a></li>
+                <li><a href="javascript:go('#nav')">导航栏</a></li>
+                <li><a href="javascript:go('#panel')">面板</a></li>
+                <li><a href="javascript:go('#table')">表格</a></li>
+                <li><a href="javascript:go('#quote')">引用</a></li>
+                <li><a href="javascript:go('#code')">代码</a></li>
             </ul>
         </nav>
     </header>
     <div id='wrapper'>
         <div class="content">
             <section>
-                <h1>开始使用</h1>
+                <h1 id="start">开始使用</h1>
                 <div class="full">
                     <p>声明HTML5 DOCTYPE</p>
                     <p>引入CSS</p>
@@ -79,7 +81,7 @@
                 </div>
             </section>
             <section>
-                <h1>布局</h1>
+                <h1 id="column">布局</h1>
                 <div class="full">
                     <p>4栅格系统</p>
                     <p>full 满格</p>
@@ -151,7 +153,7 @@
 
             </section>
             <section>
-                <h1>按钮</h1>
+                <h1 id="button">按钮</h1>
                 <div class="full">
                     <p>全部使用button方式</p>
                     <p>默认为直角,圆角下面会讲到</p>
@@ -213,7 +215,7 @@
 
             </section>
             <section>
-                <h1>输入框</h1>
+                <h1 id="input">输入框</h1>
                 <div class="full">
                     <p>四类别</p>
                     <p>input type 方式</p>
@@ -306,7 +308,7 @@
             </section>
 
             <section>
-                <h1>圆角</h1>
+                <h1 id="radius">圆角</h1>
                 <div class='full'>
                     <p>可以将圆角样式应用于大多数元素</p>
                     <p>分为三类</p>
@@ -386,7 +388,7 @@
             </section>
             
             <section>
-                <h1>颜色填充</h1>
+                <h1 id="color">颜色填充</h1>
                 <p>四类,可用于p,i,b,h1,h2,h3</p>
                 <p>用于div 可填充背景色</p>
                 <div class="full">
@@ -428,6 +430,7 @@
                     </div>
                     <div class="fourth">
                         <div class="info alert">
+
                             <p> info alert </p>
                         </div>
                     </div>
@@ -445,6 +448,7 @@
                 <div class="full">
                     <div class="half">
                         <div class="success alert radius">
+                              <h3>标题</h3>
                             <p>带有radius的success alert</p>
                         </div>
                     </div>
@@ -452,6 +456,7 @@
                 <div class="full">
                     <div class="half">
                         <div class="info alert radius">
+                            <h2>标题标题标题</h2>
                             <p>带有radius的info alert</p>
                         </div>
                     </div>
@@ -459,6 +464,7 @@
                 <div class="full">
                     <div class="half">
                         <div class="warning alert round">
+                            <h1>标题标题标题</h1>
                             <p>带有round的warning alert</p>
                         </div>
                     </div>
@@ -473,7 +479,7 @@
             </section>
 
             <section>
-                <h1>徽标</h1>
+                <h1 id="span">徽标</h1>
                 <p>同样四类</p>
                 <p>success,info,danger,warning</p>
                 <p>只适用于span标签</p>
@@ -512,7 +518,7 @@
             </section>
 
             <section>
-                <h1>分页</h1>
+                <h1 id="pager">分页</h1>
                 <p>ul.pager>li>a 适用样式</p>
                 <p>ul.pager.success 等不同颜色</p>
                 <p>ul.pager.radius 圆角</p>
@@ -599,12 +605,13 @@
             </section>
 
             <section>
-                <h1>进度条</h1>
+                <h1 id="progress">进度条</h1>
                 <p>P+I的形式</p>
                 <p>p.progress>i.info</p>
                 <p>I可接受success/info/warning/danger样式</p>
                 <p>定义I的百分比已达到填充</p>
                 <p>为progress添加active使其动起来</p>
+                <p>其他需求可自定义高度</p>
                 <div class="full">
                     <p class="progress"><i style='width:26%'></i></p>
                     <p class="progress active"><i style='width:20%' class='info'></i></p>
@@ -615,7 +622,7 @@
             </section>
 
             <section>
-                <h1>面包屑</h1>
+                <h1 id="location">面包屑</h1>
                 <p>ul.location>li>a</p>
                 <p>最后一个不需要添加a</p>
                 <p>可以添加radius,round实现圆角</p>
@@ -648,7 +655,7 @@
             </section>
 
             <section>
-                <h1>导航栏</h1>
+                <h1 id="nav">导航栏</h1>
                 <p>nav.nav>ul>li>a</p>
                 <p>nav.nav>ul.content>li>a</p>
                 <p>也可以nav.nav.fixed>ul>li>a 固定在顶部</p>
@@ -726,7 +733,7 @@
             </section>
 
             <section>
-                <h1>面板</h1>
+                <h1 id="panel">面板</h1>
                 <p>div.panel.success</p>
                 <p>div.panel必须伴有success,info,warning,danger中的一个</p>
                 <p>可以添加圆角样式</p>
@@ -785,7 +792,7 @@
 
             </section>
             <section>
-                <h1>表格</h1>
+                <h1 id="table">表格</h1>
                 <p>table.table</p>
                 <p>可以给tr添加success/info/warning/danger</p>
                 <p>也可以给td添加success/info/warning/danger</p>
@@ -876,7 +883,7 @@
             </section>
 
             <section>
-                <h1>引用</h1>
+                <h1 id="quote">引用</h1>
                 <p>使用标签blockquote</p>
                 <p>内部可以使用p,以便撑开布局</p>
                 <div class="full">
@@ -894,7 +901,7 @@
                 </div>
             </section>
             <section>
-                <h1>代码</h1>
+                <h1 id="code">代码</h1>
                 <p>适用于代码突出</p>
                 <p>可以添加success/info/warning/danger</p>
                 <div class="full">
@@ -910,6 +917,72 @@
                     </p>
                 </div>
             </section>
+            <section>
+                <h1>复合</h1>
+                <p></p>
+                <p></p>
+                <div class="full">
+                    <div class="panel success radius">
+                        <div class="header">财务报表</div>
+                        <div class="body">
+                            <p>已完成60%,成交<span class='success radius'>15</span>笔,包含<code>322个</code></p>
+                            <p class="progress active"><i class="info" style="width:60%"></i></p>
+                           <table class="table">
+                               <tr>
+                                       <td><input type="checkbox"></td>
+                                       <td>1</td>
+                                       <td>2</td>
+                                       <td>3</td>
+                                       <td>4</td>
+                                       <td>
+                                           <button class="danger">删除</button>
+                                           <button class="info">编辑</button>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td><input type="checkbox"></td>
+                                       <td>1</td>
+                                       <td>2</td>
+                                       <td>3</td>
+                                       <td>4</td>
+                                        <td>
+                                           <button class="danger">删除</button>
+                                           <button class="info">编辑</button>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td><input type="checkbox"></td>
+                                       <td>1</td>
+                                       <td>2</td>
+                                       <td>3</td>
+                                       <td>4</td>
+                                        <td>
+                                           <button class="danger">删除</button>
+                                           <button class="info">编辑</button>
+                                       </td>
+                                   </tr>    
+                           </table>
+                            <div class="full">
+                               <div class="third">
+                                 <p>
+                                
+                                    <button class="info">添加</button>
+                                    <button class="warning">添加</button>
+                                </p>
+                               </div>
+                               
+                               <div class="third">
+                              
+                                   <p>
+                                       <button class="success">查看更多</button>
+                                       <button class="danger">全部删除</button>
+                                   </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <div style="height:400px;">
               
@@ -920,5 +993,13 @@
         
     </footer>
 <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script>
+    $(function(){
+        window.go=function(x)
+        {
+            $("html,body").animate({scrollTop:$(x).offset().top},900);
+        }
+    });
+</script>
 </body>
 </html>
