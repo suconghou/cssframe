@@ -1,4 +1,5 @@
 /**	
+	cssframe V1.6
 	head请添加
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit"> 
@@ -516,7 +517,11 @@ border-left: 5px double #CCC;
 blockquote p,blockquote{
 font-family: "Segoe UI",Arial,Helvetica,"Microsoft Jhenghei",sans-serif;
 }
-
+blockquote ul{
+	list-style: initial;
+	padding-left: 40px;
+	margin: 15px 0;
+}
 
 /*代码*/
 code{
