@@ -16,14 +16,14 @@
         width: 200px;
         top: 0;
         bottom: 0;
-        background: #d9d9d9;
+        background: #eee;
     }
     header>nav{
         margin: 100px auto;
     }
     header>nav>ul>li>a{
         padding: 10px 0;
-        text-align: center;
+        text-indent: 2em;
         width: 100%;
         display: inline-block;
         *display: inline;
