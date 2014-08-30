@@ -45,6 +45,32 @@
     section{
         padding: 20px 10px;
     }
+    @media(max-width: 800px){
+        header{
+            display: none;
+        }
+        header>aside{
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 80px;
+        }
+        aside>nav>ul{
+            margin: 0;
+        }
+        aside>nav>ul>li{
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            margin: 5px 0;
+            text-indent: 1em;
+        }
+        #wrapper{
+            position: inherit;
+            margin-top: 60px;
+        }
+}
     </style>
     <title></title> 
 </head>
@@ -199,13 +225,16 @@
                     </div>
                     <div class="half">
                         <p>
-                            <a href="" class="btn">链接按钮</a>
+                            <a href="" class="btn">默认</a>
                         </p>
                         <p>
                             <a href="" class="btn success">链接按钮</a>
                         </p>
                         <p>
                             <a href="" class="btn info">链接按钮</a>
+                        </p>
+                         <p>
+                            <a href="" class="btn warning">链接按钮</a>
                         </p>
                         <p>
                             <a href="" class="btn danger">链接按钮</a>
@@ -320,7 +349,7 @@
                 <div class="full">
                     <div class="half">
                         <p>
-                            <button class="success radius">马上登陆</button>
+                            <button class="success radius">登陆</button>
                         </p>
                         <p>
                             <button class="info radius">返回首页</button>
@@ -348,11 +377,11 @@
                         </p>
 
                         <p>
-                            <a href="" class="btn round danger">链接圆角</a>
+                            <a href="" class="btn radius danger">链接圆角</a>
                         </p>
 
                         <p>
-                            <a href="" class="btn round warning">链接圆角</a>
+                            <a href="" class="btn radius warning">链接圆角</a>
                         </p>
                     </div>
                 </div>
@@ -389,8 +418,8 @@
             
             <section>
                 <h1 id="color">颜色填充</h1>
-                <p>四类,可用于p,i,b,h1,h2,h3</p>
-                <p>用于div 可填充背景色</p>
+                <p>success等四类,可用于p,i,b,h1,h2,h3</p>
+               
                 <div class="full">
                     <p class="success">success填充的P标签</p>
                     <i class="danger">danger填充的I标签</i>
@@ -405,23 +434,7 @@
                     </p>
    
                 </div>
-                <div class="full">
-                    <div class="half">
-                        <div class="success">success内容部分</div>
-                    </div>
-                    <div class="half">
-                        <div class="info">info内容部分</div>
-                    </div>
-                </div>
-
-                <div class="full">
-                    <div class="half">
-                        <div class="warning">warning内容部分</div>
-                    </div>
-                    <div class="half">
-                        <div class="danger">danger内容部分</div>
-                    </div>
-                </div><br>
+                <br>
                 <div class="full">
                     <div class="fourth">
                         <div class="success alert">
@@ -448,7 +461,7 @@
                 <div class="full">
                     <div class="half">
                         <div class="success alert radius">
-                              <h3>标题</h3>
+                              <h3>H3标题</h3>
                             <p>带有radius的success alert</p>
                         </div>
                     </div>
@@ -456,26 +469,53 @@
                 <div class="full">
                     <div class="half">
                         <div class="info alert radius">
-                            <h2>标题标题标题</h2>
+                            <h2>H2标题标题标题</h2>
                             <p>带有radius的info alert</p>
                         </div>
                     </div>
                 </div><br>
                 <div class="full">
                     <div class="half">
-                        <div class="warning alert round">
-                            <h1>标题标题标题</h1>
-                            <p>带有round的warning alert</p>
+                        <div class="warning alert radius">
+                            <h3>H3标题标题标题</h3>
+                            <p>带有radius的warning alert,一般这样使用就比较好</p>
                         </div>
                     </div>
                 </div><br>
                 <div class="full">
                     <div class="half">
-                        <div class="danger alert round">
-                            <p>带有round的danger alert</p>
+                        <div class="danger alert radius">
+                            <h3>提示框等</h3>
+                            <p>也可用带有round的danger alert</p>
                         </div>
                     </div>
                 </div>
+                <br>
+                 <div class="full">
+                    <div class="half">
+                        <div class="success alert radius">
+                            <h1>只包含H1标题</h1>
+                        </div>
+                    </div>
+                </div>
+                 <br>
+                 <div class="full">
+                    <div class="half">
+                        <div class="danger alert radius">
+                            <h2>只包含H2标题</h2>
+                        </div>
+                    </div>
+                </div>
+
+                 <br>
+                 <div class="full">
+                    <div class="half">
+                        <div class="info alert radius">
+                            <h3>只包含H3标题</h3>
+                        </div>
+                    </div>
+                </div>
+
             </section>
 
             <section>
@@ -767,9 +807,9 @@
                 </div><br>
                 <div class="full">
                     <div class="half">
-                        <div class="panel danger">
+                        <div class="panel danger radius">
                            <div class="header">面板的标题</div>
-                           <div class="body">面文面板正文面板正文面板正文面板正文面板正文面板正文面板正文面板正文面板正文</div>
+                           <div class="body">面文面板正文面板正文面板正文面板正文面板正文面板正文面板正文面板正文面板正文,当然可以使用圆角样式啊</div>
                         </div>
                     </div>
                 </div><br>
@@ -905,12 +945,12 @@
                 <p>适用于代码突出</p>
                 <p>可以添加success/info/warning/danger</p>
                 <div class="full">
-                    <code> hello world </code>
-                   
-                    <code class='info'>APPLE</code>
+                    <code> hello world </code>&nbsp;
+                    
+                    <code class='info'>APPLE</code> &nbsp;
                     <code class='success'>ANDROID</code>
                     <p>
-                        <code>PHP</code>
+                        <code class='warning'>PHP</code>
                         <code class='danger'>JAVASCRIPT</code>
                         <code>C#</code>
                         <span>学习</span><code>C++</code><span>语言</span>
