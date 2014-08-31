@@ -181,11 +181,11 @@ textarea.danger,input.danger
 }
 textarea.info,input.info
 {
-  border-color: #208dbe;
+  border-color: #3bd;
 }
 textarea.warning,input.warning
 {
-  border-color: #e6bb0d;
+  border-color: #f90;
 }
 
 textarea:focus,input:focus
