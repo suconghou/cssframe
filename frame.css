@@ -85,6 +85,9 @@ margin: auto;
 
 /*按钮*/
 button.success,button.danger,button.info,button.warning,a.btn{
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
 	border: none;
 	padding: 6px 16px;
 	-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;
