@@ -85,9 +85,6 @@ margin: auto;
 
 /*按钮*/
 button.success,button.danger,button.info,button.warning,a.btn{
-	-webkit-appearance: button;
-	-moz-appearance: button;
-	appearance: button;
 	border: none;
 	padding: 6px 16px;
 	-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;
@@ -490,15 +487,19 @@ color: #fff;
 /*面板*/
 div.panel.success{
 	border: 1px solid #2c7;
+	background-color: #dff0d8;
 }
 div.panel.info{
 	border: 1px solid #0ae;
+	background-color: #d9edf7;
 }
 div.panel.warning{
 	border: 1px solid #f60;
+	background-color: #fcf8e3;
 }
 div.panel.danger{
 	border: 1px solid #e33;
+	background-color: #f2dede;
 }
 div.panel.success>div.header{
 border-bottom:1px solid #2c7; 	
